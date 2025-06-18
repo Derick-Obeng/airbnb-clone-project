@@ -23,7 +23,7 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 -Celery.\
 -Redis.\
 -Docker.\ 
--CI/CD Pipelines.\
+-CI/CD Pipelines.
 
 ---
 
@@ -31,7 +31,7 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 --Backend Developer: Responsible for implementing API endpoints, database schemas, and business logic.\
 --Database Administrator: Manages database design, indexing, and optimizations.\
 --DevOps Engineer: Handles deployment, monitoring, and scaling of the backend services.\
---QA Engineer: Ensures the backend functionalities are thoroughly tested and meet quality standards.\
+--QA Engineer: Ensures the backend functionalities are thoroughly tested and meet quality standards.
 
 ---
 
@@ -43,7 +43,7 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 -Celery: For handling asynchronous tasks such as sending notifications or processing payments.\
 -Redis: Used for caching and session management.\
 -Docker: Containerization tool for consistent development and deployment environments.\
--CI/CD Pipelines: Automated pipelines for testing and deploying code changes.\
+-CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
 
 ---
 
@@ -53,7 +53,7 @@ Fields: id, name, email, password_hash, user_type\
 Relationships;\
 Can own multiple properties.\
 Can make multiple bookings.\
-Can leave multiple reviews.\
+Can leave multiple reviews.
 #### Property
 Fields: id, owner_id, title, location, price_per_night\
 Relationships;\
@@ -63,17 +63,17 @@ Has many bookings and reviews.
 Fields: id, user_id, property_id, start_date, end_date\
 Relationships;\
 Belongs to a user (guest).\
-Belongs to a property.\
+Belongs to a property.
 #### Review
 Fields: id, user_id, property_id, rating, comment\
 Relationships;\
 Belongs to a user.\
-Belongs to a property.\
+Belongs to a property.
 #### Payment
 Fields: id, booking_id, amount, payment_method, status\
 Relationships;\
 Tied to a specific booking.\
-Indirectly linked to a user through the booking.\
+Indirectly linked to a user through the booking.
 
 ---
 
@@ -83,7 +83,7 @@ Indirectly linked to a user through the booking.\
 -Booking System: Create a booking mechanism for users to reserve properties and manage booking details for users.\
 -Payment Processing: Integrate a payment system to handle transactions and record payment details for retrival.\
 -Review System: Allow users to leave reviews and ratings for properties to help admins upgrade.\
--Data Optimization: Ensure efficient data retrieval and storage through database optimizations.\
+-Data Optimization: Ensure efficient data retrieval and storage through database optimizations.
 
 ---
 
@@ -97,7 +97,7 @@ Defends against abuse like brute-force attacks and spamming.\
 -Input Validation & Sanitization: Filters and validates incoming data to prevent malicious input.\
 Stops attacks like SQL injection or cross-site scripting (XSS).\
 Data Encryption (at rest and in transit): Secures sensitive data (e.g., user passwords and payment info).\
-Protects user privacy and complies with data protection regulations.\
+Protects user privacy and complies with data protection regulations.
 
 ---
 
@@ -108,9 +108,9 @@ CI/CD pipelines refer to Continuous Integration and Continuous Deployment workfl
 -Efficiency: Code changes are automatically tested and deployed, reducing manual work.\
 -Reliability: Errors are caught early, ensuring a stable booking platform.\
 -Speed: Features reach users faster, keeping development agile.\
--Team Collaboration: Supports smooth workflows when multiple developers are pushing changes.\
+-Team Collaboration: Supports smooth workflows when multiple developers are pushing changes.
 
 #### tools that could be used 
 GitHub Actions – For automating testing and deployment directly from your GitHub repo.\
 Docker – For containerizing your app to ensure consistent environments across development and production.\
-Other options – Jenkins, Travis CI, or CircleCI if you want more customization.\
+Other options – Jenkins, Travis CI, or CircleCI if you want more customization.
