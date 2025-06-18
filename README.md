@@ -16,13 +16,13 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 -Data Optimization.<br>
 
 ### ⚙️ Tech Stacks
--Django.\
--Django REST Framework.\
--PostgreSQL.\ 
--GraphQL.\
--Celery.\
--Redis.\
--Docker.\ 
+-Django.<br>
+-Django REST Framework.<br>
+-PostgreSQL.<br>
+-GraphQL.<br>
+-Celery.<br>
+-Redis.<br>
+-Docker.<br>
 -CI/CD Pipelines.
 
 ---
